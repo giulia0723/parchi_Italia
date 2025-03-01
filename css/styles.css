@@ -1,0 +1,2678 @@
+@font-face {
+    font-family: 'Monda';
+    src: url('../immagini/home/Crimson_Text,Monda/Monda/static/Monda-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+header {
+    background-color:#f4f4f4;
+    color: black;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Monda', sans-serif;
+    font-size: 15px;
+}
+
+.linea {
+    border: 1px solid #CFCFD4;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0 20px;
+    display: flex;
+    font-family: 'Monda', sans-serif;
+}
+
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+
+
+nav ul li a:hover {
+    color: green;
+}
+
+
+
+.introimg-container {
+    display: flex;
+    margin-top: 10px;
+}
+
+.introimg {
+    position: relative;
+    width: 100%;
+    max-width: 30%;
+    overflow: hidden;
+    border-radius: 0px;
+   
+}
+
+.introimg img {
+    width: 100%;
+    height: auto;
+}
+
+.introimg-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+main {
+    padding: 20px;
+}
+
+
+
+.intro {
+    text-align: left;
+    margin-bottom: 2px;
+    color: #005211;
+}
+.intro h2 {
+    font-size: 38px; 
+    font-weight: bold; 
+    color: #005211; 
+    text-align: left; 
+    padding: 0 25px;
+}
+
+.intro1 {
+    text-align: left;
+    margin-bottom: 2px;
+    font-size: 26px;
+    padding: 0 25px;
+}
+
+
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 0 25px;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    transition: box-shadow 0.3s ease-in-out;
+    
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.card-content h3 {
+    font-size: 1.2px;
+    color: white;
+  
+}
+.card-content .parchi {
+    font-weight: bold; 
+}
+
+.parchi {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    padding: 10px 20px;
+    background: #005211;
+    width: 100%;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+    border-radius: 0 0 0 0;
+    box-sizing: border-box;
+}
+
+.parchi:hover {
+    background-color: green;
+    
+}
+
+
+
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 0 25px;
+}
+
+.cardgrandi {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 10px auto;
+    overflow: hidden;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.cardgrandi:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.card-content-split {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 300px;
+}
+
+.text-content {
+    flex: 1;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.text-content h3 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.text-content p {
+    font-size: 20px;
+    color: #333;
+    margin: 10px 0;
+}
+.image-content {
+    flex: 1;
+    height: 100%;
+}
+
+.image-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+
+.scopridipiu {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #005211;
+    width: 60%;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    
+}
+
+.scopridipiu:hover {
+    background-color: green;
+}
+
+
+.introimg_container {
+    display: flex;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+/* css gran paradiso */
+
+
+
+
+.introimgn {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    margin: 0px;
+    overflow: hidden;
+    border-radius: 0px;
+    display: flex;
+   
+}
+
+.introimgn img {
+    width: 100%;
+    height: auto;
+}
+
+.introimgn-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.parcotesto {
+    text-align: left;
+    margin-top: 10px; 
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 0px;;
+    font-size: 20px;
+}
+
+.sottotitoloparcotesto {
+    text-align: left;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 20px;
+}
+
+
+
+.indice {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    max-width: 700px;
+    margin: 20px auto;
+    margin-left: 200px;
+    
+}
+
+.column {
+    flex: 1; 
+    padding: 0 20px;
+    margin: 0;
+}
+
+
+
+.column ul {
+    list-style-type: disc;
+    color: black;
+    padding-left: 20px;
+}
+
+.column li {
+    margin-bottom: 10px;
+}
+
+.column li a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+.column li a:hover {
+    color: green;
+}
+
+
+.introduzione1 {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    
+}
+
+.testo {
+    flex: 2;
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: 'Arial', sans-serif;
+}
+
+.immagine {
+    flex: 0 0 400px; 
+    margin-left: 20px;
+   
+}
+
+.immagine img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    transition: box-shadow 0.3s ease-in-out;
+}
+.immagine img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+.ghiacciai {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; 
+    margin-top: 60px;
+   
+}
+
+.ghiacciai h3 {
+    font-size: 24px;
+    font-weight: bold;
+   
+}
+
+.ghiacciai p {
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.intro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.granp img {
+    width: 350px; 
+    height: 250px;
+    margin: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); 
+}
+
+.granp img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
+}
+
+
+
+
+.fauna {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; 
+    margin-top: 120px;
+}
+
+.fauna h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+}
+
+.fauna p {
+    font-size: 20px;
+    line-height: 1.2; 
+    font-family: 'Arial', sans-serif;
+}
+
+
+
+
+.fauna-container {
+    display: flex;
+    justify-content: center;
+    margin-top: -70px;
+}
+
+.fauna img {
+    width: 350px; 
+    height: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    gap:25px;
+   
+}
+
+.fauna img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
+}
+
+
+
+
+.attività {
+   
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    margin-top: 120px;
+    
+}
+.attività h3 {
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+.attività p {
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.attività-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -70px 200px;
+    
+}
+
+.attività img {
+    width: 350px; 
+    height: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); 
+   
+}
+
+.attività img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
+}
+
+
+.attività2 {
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; 
+    margin-top: 0px;
+}
+
+
+.attività2 p {
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: 'Arial', sans-serif;
+    
+}
+
+
+
+
+.patrimoniob {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; 
+    margin-top: 100px;
+}
+
+.patrimoniob  h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+   
+    
+}
+
+.patrimoniob  p {
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: 'Arial', sans-serif;
+}
+
+
+
+
+.patrimoniob-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -30px 200px;
+
+    
+}
+
+.patrimoniob  img {
+    width: 350px; 
+    height: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.patrimoniob  img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
+}
+
+
+
+.patrimonios {
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; 
+    margin-top: 120px;
+}
+
+.patrimonios h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+}
+
+.patrimonios p {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-right: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.conservazione {
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; 
+    margin-top: 60px;
+}
+
+.conservazione h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+}
+
+.conservazione p {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-right: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.visita {
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; 
+    margin-top: 60px;
+    margin-bottom: 120px;
+}
+
+.visita h3 {
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+.visita p {
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: 'Arial', sans-serif;
+}
+
+
+
+
+
+
+/* css etna */
+
+
+
+.introimgn1 {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    margin: 0px;
+    overflow: hidden;
+    border-radius: 0px;
+    display: flex;
+   
+}
+
+.introimgn1 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: 30% 35%;
+    
+}
+
+.introimgn1-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+.parcotesto1 {
+    text-align: left;
+    margin-top: 10px; 
+    margin-left: 200px;
+    padding: 0px;
+    font-size: 20px;
+}
+
+.sottotitoloparcotesto1 {
+    text-align: left;
+    margin-top: 0px;
+    margin-left: 200px;
+    padding: 0px;
+    font-size: 20px;
+}
+
+
+
+.indice1 {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    max-width: 700px;
+    margin: 20px auto;
+    margin-left: 200px;
+    
+}
+
+.column {
+    flex: 1; 
+    padding: 0 20px;
+    margin: 0;
+}
+
+
+
+.column ul {
+    list-style-type: disc;
+    color: black;
+    padding-left: 20px;
+}
+
+.column li {
+    margin-bottom: 10px;
+}
+
+.column li a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+.column li a:hover {
+    color: green;
+}
+
+
+
+
+.introduzione_1 {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
+.testo1 {
+    flex: 2;
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: 'Arial', sans-serif;
+}
+
+.immagine1 {
+    flex: 0 0 400px; 
+    margin-left: 20px;
+}
+
+.immagine1 img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    transition: box-shadow 0.3s ease-in-out;
+}
+.immagine1 img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+.paesaggi {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; 
+    margin-top: 50px;
+}
+
+.paesaggi h3 {
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+.paesaggi p {
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.intro-container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.vulcano img {
+    width: 350px; 
+    height: 250px;
+    margin: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); 
+}
+
+.vulcano img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
+}
+
+
+
+
+.fauna1 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; 
+    margin-top: 120px;
+}
+
+.fauna1 h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+    
+}
+
+.fauna1 p {
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: 'Arial', sans-serif;
+}
+
+
+
+
+.fauna-container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -60px;
+    
+}
+
+.fauna1 img {
+
+    width: 350px; 
+    height: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.fauna1 img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
+}
+
+
+
+
+.attività1 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; 
+    margin-top: 120px;
+}
+
+.attività1 h3 {
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+.attività1 p {
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.attività-container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -40px -5px;
+    
+}
+
+.attività1 img {
+    width: 350px; 
+    height: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); 
+}
+
+.attività1 img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
+}
+
+.attivitàtesto1 {
+    padding: 20px;
+    margin-left: -20px;
+    margin-right: 20px;
+    max-width: 1200px; 
+    margin-top: 40px;
+}
+
+
+.attivitàtesto1 p {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-right: 20px;
+    font-family: 'Arial', sans-serif;
+    
+}
+
+.attività-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.attivita1 img {
+    width: 350px; 
+    height: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); 
+    margin: 90px 25px
+}
+
+.attivita1 img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
+}
+
+
+
+
+
+.patrimonio1 {
+    padding: 20px;
+    margin-left: -20px;
+    margin-right: 20px;
+    max-width: 1200px; 
+}
+
+.patrimonio1  h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+   
+    
+}
+
+.patrimonio1  p {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-right: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+
+
+
+.conservazione1 {
+    
+    margin-top: 120px;
+}
+
+.conservazione1 h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+}
+
+.conservazione1 p {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-right: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.visita1 {
+    
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.visita1 h3 {
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+.visita1 p {
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: 'Arial', sans-serif;
+}
+
+
+
+
+/* css pollino */
+
+
+
+
+.introimgn2 {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    margin: 0px;
+    overflow: hidden;
+    border-radius: 0px;
+    display: flex;
+   
+}
+
+.introimgn2 img {
+    width: 100%;
+    height: auto;
+    
+    
+}
+
+.introimgn2-content {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.parcotesto2 {
+    text-align: left;
+    margin-top: 10px; 
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 0px;
+    font-size: 20px;
+    display: flex;
+
+}
+
+.sottotitoloparcotesto2 {
+    text-align: left;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: -20px;
+    font-size: 20px;
+
+}
+
+
+.indice2 {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    max-width: 700px;
+    margin: 20px auto;
+    margin-left: 200px;
+    
+}
+
+.column {
+    flex: 1; 
+    padding: 0 20px;
+    margin: 0;
+}
+
+
+
+.column ul {
+    list-style-type: disc;
+    color: black;
+    padding-left: 20px;
+}
+
+.column li {
+    margin-bottom: 10px;
+}
+
+.column li a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+.column li a:hover {
+    color: green;
+}
+
+
+
+
+.introduzione_2 {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    max-width: 1200px;
+}
+
+.testo2 {
+    flex: 2;
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: 'Arial', sans-serif;
+}
+
+.immagine2 {
+    flex: 0 0 400px; 
+}
+
+.immagine2 img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    transition: box-shadow 0.3s ease-in-out;
+}
+.immagine2 img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+.montagne {
+    max-width: 1200px; 
+    margin-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.montagne h3 {
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+.montagne p {
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: 'Arial', sans-serif;
+    
+}
+
+
+.intro-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.montagne img {
+    width: 350px; 
+    height: 250px;
+    margin: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); 
+    
+}
+
+.montagne img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
+}
+
+
+
+
+.fauna2 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; 
+    margin-top: 120px;
+}
+
+.fauna2 h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+    
+}
+
+.fauna2 p {
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: 'Arial', sans-serif;
+}
+
+
+
+
+.fauna-container2 {
+    display: flex;
+    justify-content: center;
+    margin-top: -120px;
+
+}
+
+.fauna2 img {
+    width: 350px;
+    height: 250px;
+    gap: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+
+}
+
+.fauna2 img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
+}
+
+
+
+
+.attività2 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; 
+    margin-top: 60px;
+    
+
+}
+
+.attività2 h3 {
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+.attività2 p {
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.attività-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;   
+    
+}
+
+.attività2 img {
+    width: 350px; 
+    height: 250px;
+    margin: -20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+   
+
+.attività2 img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
+}
+
+
+
+
+.patrimoniob2 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; 
+    margin-top: 120px;
+    
+}
+
+.patrimoniob2  h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+   
+    
+}
+
+.patrimoniob2  p {
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: 'Arial', sans-serif;
+}
+
+.patrimoniob-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -120px 200px;    
+}
+
+.patrimoniob2 img {
+    width: 350px; 
+    height: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); 
+}
+
+.patrimoniob2 img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
+}
+
+
+
+.patrimonios2 {
+    padding: 20px;
+    margin-left: -20px;
+    margin-right: 20px;
+    max-width: 1200px; 
+    margin-top: 160px;
+}
+
+.patrimonios2  h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+   
+    
+}
+
+.patrimonios2  p {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-right: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+
+
+
+.conservazione2 {
+    
+    margin-top: 90px;
+}
+
+.conservazione2 h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+}
+
+.conservazione2 p {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-right: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.visita2 {
+    
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.visita2 h3 {
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+.visita2 p {
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: 'Arial', sans-serif;
+}
+
+
+
+
+
+
+
+/* css dolomiti bellunesi */
+
+
+
+
+.introimgn3 {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    margin: 0px;
+    overflow: hidden;
+    display: flex;
+   
+}
+
+.introimgn3 img {
+    width: 100%;
+    height: auto;
+    
+}
+
+.introimgn3-content {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.parcotesto3 {
+    text-align: left;
+    margin-top: 10px; 
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 0px;
+    font-size: 20px;
+
+}
+
+.sottotitoloparcotesto3 {
+    text-align: left;
+    margin-right: 200px; 
+    margin-left: 200px;
+    font-size: 20px;
+
+}
+
+
+.indice3 {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    max-width: 700px;
+    margin: 20px auto;
+    margin-left: 200px;
+    
+}
+
+.column {
+    flex: 1; 
+    padding: 0 20px;
+    margin: 0;
+}
+
+
+
+.column ul {
+    list-style-type: disc;
+    color: black;
+    padding-left: 20px;
+}
+
+.column li {
+    margin-bottom: 10px;
+}
+
+.column li a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+.column li a:hover {
+    color: green;
+}
+
+
+
+
+.introduzione_3 {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    
+}
+
+.testo3 {
+    flex:2 ;
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: 'Arial', sans-serif;
+}
+
+.immagine3 {
+    flex: 0 0 400px; 
+}
+
+.immagine3 img {
+    width: 100%; 
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    transition: box-shadow 0.3s ease-in-out;
+}
+.immagine3 img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+}
+
+
+.montagne1 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; 
+    margin-top: 60px;
+}
+
+.montagne1 h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.montagne1 p {
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: 'Arial', sans-serif;
+    
+}
+
+
+.intro-container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -60px;
+}
+
+
+.montagne1 img {
+    width: 350px; 
+    height: 250px;
+    margin: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); 
+    
+}
+
+.montagne1 img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
+}
+
+
+.fauna3 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; 
+    margin-top: 120px;
+}
+
+.fauna3 h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+    
+}
+
+.fauna3 p {
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: 'Arial', sans-serif;
+}
+
+
+
+
+.fauna-container3 {
+    display: flex;
+    justify-content: center;
+    margin: -90px 140px;
+    
+
+}
+
+.fauna3 img {
+    width: 350px;
+    height: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); 
+
+}
+
+.fauna3 img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
+}
+
+
+.attivita3 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    margin-top: 220px;
+}
+
+.attivita3 h3 {
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+.attivita3 p {
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.attivita-container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -190px 140px;
+    
+    
+}
+
+.attivita3 img {
+    width: 350px; 
+    height: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); 
+    
+}
+   
+
+.attivita3 img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
+}
+
+
+.patrimoniob3 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; 
+    margin-top: 320px;
+    
+}
+
+.patrimoniob3  h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.patrimoniob3  p {
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: 'Arial', sans-serif;
+}
+
+.patrimoniob3-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -290px 200px;
+    
+      
+}
+
+.patrimoniob3 img {
+    width: 350px; 
+    height: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); 
+}
+
+.patrimoniob3 img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
+}
+
+
+.patrimonios3 {
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; 
+    margin-top: 380px;
+}
+
+.patrimonios3  h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+   
+    
+}
+
+.patrimonios3  p {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-right: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+
+
+.conservazione3 {
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; 
+    margin-top: 60px;
+}
+
+.conservazione3 h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+}
+
+.conservazione3 p {
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: 'Arial', sans-serif;
+}
+
+.visita3 {
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; 
+    margin-top: 60px;
+}
+
+.visita3 h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+}
+
+.visita3 p {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-right: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+
+/* css parchi  */
+
+.titoloparchi {
+    text-align: left;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
+.titoloparchi h3 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #005211;
+} 
+
+.titoloparchi p {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-top: -10px;
+    font-family: 'Arial', sans-serif;
+}
+
+.cardparchi {
+    text-align: left;
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    height: 300px;
+}
+
+.cardparchi ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+.cardparchi li {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.cardparchi a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.cardparchi a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* css flora e fauna  */
+
+.titolofloraefauna {
+    text-align: left;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto ;
+    max-width: 1200px;
+}
+
+.titolofloraefauna h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #005211;
+} 
+
+.titolofloraefauna p {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-top: -10px;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.indiceparchi {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    max-width: 500px;
+    margin: 20px auto;
+    margin-left: 200px;
+    
+}
+
+.column {
+    flex: 1; 
+    padding: 0 20px;
+    margin: 0;
+}
+
+
+
+.column ul {
+    list-style-type: disc;
+    color: black;
+    padding-left: 20px;
+}
+
+.column li {
+    margin-bottom: 10px;
+}
+
+.column li a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+.column li a:hover {
+    color: green;
+}
+
+.parco1 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; 
+    margin-top: 80px;
+    
+
+}
+
+.parco1 h3 {
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+.parco1 p {
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.parco1-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;   
+    
+}
+
+.parco1 img {
+    width: 350px; 
+    height: 250px;
+    margin: -20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+   
+
+.parco1 img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
+}
+
+.parco_1 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; 
+    margin-top: 80px;
+}
+.parco_1 p {
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.parco_1-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;   
+    
+}
+
+.parco_1 img {
+    width: 350px; 
+    height: 250px;
+    margin: -20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+   
+
+.parco_1 img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
+}
+
+.scopri1 {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    max-width: 500px;
+    margin: 80px 150px;
+}
+.scopri1-testo {
+    font-size: 18px;
+    color: black;
+    margin-left: 20px;
+}
+.card-button {
+    background-color: green;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.card-button:hover {
+    background-color: darkgreen;
+}
+.card-button span {
+    margin-left: 10px
+}
+
+
+.parco2 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; 
+    margin-top: 120px;
+    
+
+}
+
+.parco2 h3 {
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+.parco2 p {
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.parco2-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;   
+    
+}
+
+.parco2 img {
+    width: 350px; 
+    height: 250px;
+    margin: -20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+   
+
+.parco2 img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
+}
+
+.scopri2 {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    max-width: 350px;
+    margin: 80px 150px;
+}
+.scopri2-testo {
+    font-size: 18px;
+    color: black;
+    margin-left: 20px;
+}
+.card-button {
+    background-color: green;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.card-button:hover {
+    background-color: darkgreen;
+}
+.card-button span {
+    margin-left: 10px
+}
+
+
+
+
+.parco3 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; 
+    margin-top: 120px;
+    
+
+}
+
+.parco3 h3 {
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+.parco3 p {
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.parco3-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;   
+    
+}
+
+.parco3 img {
+    width: 350px; 
+    height: 250px;
+    margin: -20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+   
+
+.parco3 img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
+}
+
+.scopri3 {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    max-width: 450px;
+    margin: 80px 150px;
+}
+.scopri3-testo {
+    font-size: 18px;
+    color: black;
+    margin-left: 20px;
+}
+.card-button {
+    background-color: green;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.card-button:hover {
+    background-color: darkgreen;
+}
+.card-button span {
+    margin-left: 10px
+}
+
+
+
+.parco4 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; 
+    margin-top: 120px;
+    
+
+}
+
+.parco4 h3 {
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+.parco4 p {
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.parco4-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;   
+    
+}
+
+.parco4 img {
+    width: 350px; 
+    height: 250px;
+    margin: -20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+   
+
+.parco4 img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
+}
+
+.parco_4 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; 
+    margin-top: 80px;
+}
+.parco_4 p {
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.parco_4-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;   
+    
+}
+
+.parco_4 img {
+    width: 350px; 
+    height: 250px;
+    margin: -20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+   
+
+.parco_4 img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
+}
+
+.scopri4 {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    max-width: 550px;
+    margin: 80px 150px;
+}
+.scopri4-testo {
+    font-size: 18px;
+    color: black;
+    margin-left: 20px;
+}
+.card-button {
+    background-color: green;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.card-button:hover {
+    background-color: darkgreen;
+}
+.card-button span {
+    margin-left: 10px
+}
+
+
+
+
+/* css parchi  */
+
+.titoloparchi {
+    text-align: left;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
+.titoloparchi h3 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #005211;
+} 
+
+.titoloparchi p {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-top: -10px;
+    font-family: 'Arial', sans-serif;
+}
+
+.cardparchi {
+    text-align: left;
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    height: 300px;
+}
+
+.cardparchi ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+.cardparchi li {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.cardparchi a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.cardparchi a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* css attività  */
+
+.titoloattività {
+    text-align: left;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto ;
+    max-width: 1200px;
+}
+
+.titoloattività h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #005211;
+} 
+
+.titoloattività p {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-top: -10px;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.indiceattività {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    max-width: 490px;
+    margin: 20px auto;
+    margin-left: 200px;
+    
+}
+
+.column {
+    flex: 1; 
+    padding: 0 20px;
+    margin: 0;
+}
+
+
+
+.column ul {
+    list-style-type: disc;
+    color: black;
+    padding-left: 20px;
+}
+
+.column li {
+    margin-bottom: 10px;
+}
+
+.column li a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+.column li a:hover {
+    color: green;
+}
+
+.attività1 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; 
+    margin-top: 80px;
+    
+
+}
+
+.attività1 h3 {
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+.attività1 p {
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.attività1-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -50px 200px;
+}
+
+.attività1 img {
+    width: 350px; 
+    height: 250px;
+    margin: -20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+   
+
+.attività1 img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
+}
+
+
+.scopri_1 {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    max-width: 500px;
+    margin: 120px 150px;
+}
+.scopri_1-testo {
+    font-size: 18px;
+    color: black;
+    margin-left: 20px;
+}
+.card-button {
+    background-color: green;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.card-button:hover {
+    background-color: darkgreen;
+}
+.card-button span {
+    margin-left: 10px
+}
+
+
+.attività2 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; 
+    margin-top: 70px;
+    
+
+}
+
+.attività2 h3 {
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+.attività2 p {
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.attività2-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;   
+    
+}
+
+.attività2 img {
+    width: 350px; 
+    height: 250px;
+    margin: -20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+   
+
+.attività2 img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
+}
+
+.scopri_2 {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    max-width: 350px;
+    margin: 30px 150px;
+}
+.scopri_2-testo {
+    font-size: 18px;
+    color: black;
+    margin-left: 20px;
+}
+.card-button {
+    background-color: green;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.card-button:hover {
+    background-color: darkgreen;
+}
+.card-button span {
+    margin-left: 10px
+}
+
+
+
+
+.attività3 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; 
+    margin-top: 120px;
+    
+
+}
+
+.attività3 h3 {
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+.attività3 p {
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.attività3-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;   
+    
+}
+
+.attività3 img {
+    width: 350px; 
+    height: 250px;
+    margin: -20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+   
+
+.attività3 img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
+}
+
+.scopri_3 {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    max-width: 450px;
+    margin: 80px 150px;
+}
+.scopri_3-testo {
+    font-size: 18px;
+    color: black;
+    margin-left: 20px;
+}
+.card-button {
+    background-color: green;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.card-button:hover {
+    background-color: darkgreen;
+}
+.card-button span {
+    margin-left: 10px
+}
+
+
+
+.attività4 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; 
+    margin-top: 120px;
+    
+
+}
+
+.attività4 h3 {
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+.attività4 p {
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.attività4-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -50px 200px;  
+    
+}
+
+.attività4 img {
+    width: 350px; 
+    height: 250px;
+    margin: -20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+   
+
+.attività4 img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
+}
+
+.scopri_4 {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    max-width: 550px;
+    margin: 120px 150px;
+}
+.scopri_4-testo {
+    font-size: 18px;
+    color: black;
+    margin-left: 20px;
+}
+.card-button {
+    background-color: green;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.card-button:hover {
+    background-color: darkgreen;
+}
+.card-button span {
+    margin-left: 10px
+}
+
+
+.footer-bar {
+    background-color: #d3d3d3; 
+    padding: 20px 0;
+    text-align: center; 
+    font-size: 16px;
+    color: black;
+    margin-top: 180px; 
+    font-family: 'Monda', sans-serif;
+}
+
+
+
+.footer-bar p {
+    margin: 0;
+}
+
