@@ -4,27 +4,37 @@
     font-weight: bold;
 }
 
+
 html {
     scroll-behavior: smooth;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif; 
     background-color: #f4f4f4;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 
 header {
-    background-color:#f4f4f4;
-    color: black;
-    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box; 
+    padding: 10px 20px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     font-family: 'Monda', sans-serif;
     font-size: 15px;
+}
+header h4 {
+    font-size: clamp(14px, 2vw, 20px); 
+    margin: 0;
+    flex: 1 1 auto; 
+    text-align: left; 
+
 }
 
 .linea {
@@ -32,21 +42,23 @@ header {
 }
 
 nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     list-style-type: none;
     padding: 0 20px;
-    display: flex;
+    margin: 0;
     font-family: 'Monda', sans-serif;
 }
 
-
-nav ul li {
-    margin: 0 20px;
-}
 
 nav ul li a {
     color: black;
     text-decoration: none;
     transition: color 0.3s ease;
+    font-size: clamp(12px, 2vw, 16px);;
 }
 
 
@@ -55,25 +67,44 @@ nav ul li a:hover {
     color: green;
 }
 
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
 
 
 .introimg-container {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 10px;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    
+
+    
 }
 
 .introimg {
     position: relative;
-    width: 100%;
-    max-width: 30%;
+    flex: 1 1 25%;  
+    max-width: 25%;
     overflow: hidden;
     border-radius: 0px;
-   
 }
 
 .introimg img {
     width: 100%;
     height: auto;
+    display: block;
 }
 
 .introimg-content {
@@ -85,6 +116,7 @@ nav ul li a:hover {
 }
 
 
+
 main {
     padding: 20px;
 }
@@ -92,12 +124,12 @@ main {
 
 
 .intro {
-    text-align: left;
-    margin-bottom: 2px;
+    text-align: center;
+    margin-bottom: 10x;
     color: #005211;
 }
 .intro h2 {
-    font-size: 38px; 
+    font-size: clamp(22px, 4vw, 38px);
     font-weight: bold; 
     color: #005211; 
     text-align: left; 
@@ -106,8 +138,8 @@ main {
 
 .intro1 {
     text-align: left;
-    margin-bottom: 2px;
-    font-size: 26px;
+    margin-bottom: 10px;
+    font-size: clamp(16px, 2.5vw, 26px);
     padding: 0 25px;
 }
 
@@ -118,18 +150,24 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 20px;
-    padding: 0 25px;
+    padding: 0 20px;
+   
 }
 
 .card {
+
     position: relative;
-    width: 100%;
-    max-width: 300px;
-    margin: 10px;
-    overflow: hidden;
+    overflow: visible;
+    min-height: auto;
+    flex: 0 0 calc(25% - 15px);
+    max-width: calc(25% - 15px);
+    margin-bottom: 10px;
     border-radius: 0px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
     transition: box-shadow 0.3s ease-in-out;
+    height: 100%;
+    
+    
     
 }
 
@@ -140,45 +178,65 @@ main {
 .card img {
     width: 100%;
     height: auto;
+    display: block;
 }
 
+
 .card-content {
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    overflow: hidden;
+    word-wrap: break-word;
     width: 100%;
     color: white;
-    padding: 10px;
-    box-sizing: border-box;
+    font-size: clamp(18px, 4vw, 26px);
+    padding: 0px;
+    box-sizing: border-box; 
+    background: #005211; 
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    
 }
+
+    
+
 .card-content h3 {
-    font-size: 1.2px;
+    font-size: clamp(18px, 4vw, 26px);
+    margin: 0;
+    text-align: center;
+    word-break: break-word;
+    max-width: 100%;
     color: white;
-  
 }
 .card-content .parchi {
     font-weight: bold; 
+    font-size: clamp(14px, 2.5vw, 20px); 
 }
 
 .parchi {
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-    padding: 10px 20px;
+    padding: 15px 20px;
     background: #005211;
     width: 100%;
     text-align: left;
     color: white;
     text-decoration: none;
-    border-radius: 0 0 0 0;
     box-sizing: border-box;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: clamp(14px, 2.5vw, 18px);
+    display: flex;  
+    justify-content: center;     
+    align-items: center; 
+    white-space: normal;
+
+            
+    
 }
 
 .parchi:hover {
     background-color: green;
+    transform: scale(1.02);
     
 }
-
-
 
 
 .cards-container {
@@ -190,69 +248,104 @@ main {
 }
 
 .cardgrandi {
-    position: relative;
-    width: 100%;
-    max-width: 600px;
-    margin: 10px auto;
+    display: flex;
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+    margin: 10px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.6);
     overflow: hidden;
-    border-radius: 0px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-    transition: box-shadow 0.3s ease-in-out;
-}
-
-.cardgrandi:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
 }
 
 .card-content-split {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    height: 300px;
+    flex-direction: row;
+    height: 100%; 
 }
 
 .text-content {
     flex: 1;
     padding: 20px;
-    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .text-content h3 {
-    font-size: 25px;
-    font-weight: bold;
+    font-size: clamp(18px, 2.5vw, 28px);
+    margin: 0;
 }
 
 .text-content p {
-    font-size: 20px;
-    color: #333;
+    font-size: clamp(14px, 1.2vw, 18px);
     margin: 10px 0;
+    color: black;
 }
+
+.scopridipiu {
+    margin-top: auto;
+    background: #005211;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+    font-size: clamp(14px, 1.2vw, 18px);
+}
+
+.scopridipiu:hover {
+    background-color: green;
+}
+
 .image-content {
     flex: 1;
-    height: 100%;
+    min-width: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .image-content img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
 
+@media screen and (max-width: 768px) {
+    .cardgrandi {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .text-content h3 {
+        font-size: clamp(16px, 5vw, 24px);
+    }
+
+    .text-content p {
+        font-size: clamp(12px, 4vw, 16px);
+    }
+
+    .scopridipiu {
+        font-size: clamp(12px, 4vw, 16px);
+    }
 }
 
 
-
 .scopridipiu {
-    display: block;
-    margin-top: 10px;
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: 0px;
     padding: 10px 20px;
     background: #005211;
-    width: 60%;
     color: white;
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
     box-sizing: border-box;
+    width: 100%;
+    transition: background 0.3s;
     
 }
 
@@ -264,6 +357,8 @@ main {
 .introimg_container {
     display: flex;
     margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 
@@ -274,39 +369,33 @@ main {
 /* css gran paradiso */
 
 
-
-
 .introimgn {
     position: relative;
     width: 100%;
-    height: 400px;
+    height: clamp(200px, 40vh, 400px);
     margin: 0px;
     overflow: hidden;
     border-radius: 0px;
     display: flex;
+    
    
 }
 
 .introimgn img {
     width: 100%;
     height: auto;
+    object-fit: cover;
 }
 
-.introimgn-content {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-}
+
 
 .parcotesto {
     text-align: left;
     margin-top: 10px; 
     margin-left: 200px;
     margin-right: 200px;
-    padding: 0px;;
-    font-size: 20px;
+    padding: 0px;
+    font-size: 18px;
 }
 
 .sottotitoloparcotesto {
@@ -315,6 +404,12 @@ main {
     margin-right: 200px;
     font-size: 20px;
 }
+@media (max-width: 768px) {
+    .parcotesto, .sottotitoloparcotesto {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
 
 
 
@@ -330,6 +425,16 @@ main {
     margin-left: 200px;
     
 }
+@media (max-width: 768px) {
+    .indice {
+      flex-direction: column; 
+      margin: 20px 20px; 
+      max-width: 100%; 
+      padding: 10px;
+    }
+  
+
+  
 
 .column {
     flex: 1; 
@@ -359,7 +464,7 @@ main {
 .column li a:hover {
     color: green;
 }
-
+}
 
 .introduzione1 {
     display: flex;
@@ -387,12 +492,39 @@ main {
 .immagine img {
     width: 100%;
     height: auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
-    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.5s ease-in-out;
 }
 .immagine img:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
 }
+@media (max-width: 768px) {
+    .introduzione1 {
+        flex-direction: column;
+        align-items: center; 
+        padding: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .testo {
+        font-size: 18px;
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+
+    .immagine {
+        margin-left: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .immagine img {
+        width: 100%;
+        height: auto;
+    }
+}
+
 
 
 
@@ -430,12 +562,20 @@ main {
     width: 350px; 
     height: 250px;
     margin: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.5s ease-in-out;
+    
 }
 
 .granp img:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
 }
+@media (max-width: 768px) {
+    .intro-container {
+      flex-direction: column;   
+      align-items: center;    
+    }  
+  }
 
 
 
@@ -465,15 +605,18 @@ main {
 
 .fauna-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    margin-top: -70px;
+    gap: 10px; 
 }
 
 .fauna img {
-    width: 350px; 
-    height: 250px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-    gap:25px;
+    width: 100%; 
+    max-width: 350px;
+    height: auto;
+    object-fit: cover; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.5s ease-in-out;
    
 }
 
@@ -509,15 +652,16 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: -70px 200px;
+    flex-wrap: wrap;
+    margin: 20px 200px;
     
 }
 
 .attività img {
     width: 350px; 
-    height: 250px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); 
-   
+    height: 250px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.5s ease-in-out;
 }
 
 .attività img:hover {
@@ -572,7 +716,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: -30px 200px;
+    margin: 30px 200px;
+    flex-wrap: wrap;
 
     
 }
@@ -580,7 +725,8 @@ main {
 .patrimoniob  img {
     width: 350px; 
     height: 250px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.5s ease-in-out;
 }
 
 .patrimoniob  img:hover {
@@ -664,10 +810,11 @@ main {
 
 
 
+
 .introimgn1 {
     position: relative;
     width: 100%;
-    height: 400px;
+    height: clamp(200px, 40vh, 400px);
     margin: 0px;
     overflow: hidden;
     border-radius: 0px;
@@ -679,7 +826,7 @@ main {
     width: 100%;
     height: auto;
     object-fit: cover;
-    object-position: 30% 35%;
+    
     
 }
 
@@ -707,7 +854,12 @@ main {
     padding: 0px;
     font-size: 20px;
 }
-
+@media (max-width: 768px) {
+    .parcotesto1, .sottotitoloparcotesto1 {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
 
 
 .indice1 {
@@ -752,6 +904,15 @@ main {
     color: green;
 }
 
+@media  (max-width: 768px) {
+.indice1 {
+    flex-direction: column; 
+      margin: 20px 20px; 
+      max-width: 100%; 
+      padding: 10px;
+    }
+  
+}
 
 
 
@@ -779,15 +940,22 @@ main {
 .immagine1 img {
     width: 100%;
     height: auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
-    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.5s ease-in-out;
 }
 .immagine1 img:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
 }
 
-
-
+@media (max-width: 768px) {
+    .introduzione_1 {
+        flex-direction: column;
+        align-items: center; 
+        padding: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
 
 .paesaggi {
     margin-left: auto;
@@ -813,6 +981,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
    
 }
 
@@ -820,7 +989,9 @@ main {
     width: 350px; 
     height: 250px;
     margin: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.5s ease-in-out;
+    
 }
 
 .vulcano img:hover {
@@ -835,6 +1006,7 @@ main {
     margin-right: auto;
     max-width: 1200px; 
     margin-top: 120px;
+    
 }
 
 .fauna1 h3 {
@@ -858,21 +1030,35 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -60px;
+    margin-top: 60px;
     
 }
 
 .fauna1 img {
 
-    width: 350px; 
+    max-width: 350px; 
     height: 250px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-}
+    margin: 15px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.5s ease-in-out;
+    object-fit: cover;
+}   
 
 .fauna1 img:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
 }
 
+@media (max-width: 768px) {
+    .fauna-container1 {
+        flex-direction: column; 
+    }
+
+    .fauna1 img {
+        width: 90%; 
+        height: auto; 
+        margin: 5px 0; 
+    }
+}
 
 
 
@@ -900,20 +1086,33 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: -40px -5px;
+    margin: 40px 0px;
     
 }
 
 .attività1 img {
     width: 350px; 
-    height: 250px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); 
+    height: 250px; 
+    margin: 15px 0; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.5s ease-in-out;
+    object-fit: cover; 
 }
 
 .attività1 img:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
 }
+@media (max-width: 768px) {
+    .attività-container1 {
+        flex-direction: column;     }
 
+    .attività1 img {
+        width: 90%; 
+        height: auto; 
+        margin: 15px 0;
+        flex-direction: column;
+    }
+}
 .attivitàtesto1 {
     padding: 20px;
     margin-left: -20px;
@@ -940,7 +1139,8 @@ main {
 .attivita1 img {
     width: 350px; 
     height: 250px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.5s ease-in-out;
     margin: 90px 25px
 }
 
@@ -1020,7 +1220,25 @@ main {
 /* css pollino */
 
 
-
+@media (max-width: 768px) {
+    .montagne img,
+    .fauna2 img,
+    .attività2 img,
+    .patrimoniob2 img {
+      width: 90% ;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+    }
+  
+    .fauna-container2,
+    .attività-container2,
+    .patrimoniob-container2,
+    .intro-container2{
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 
 .introimgn2 {
     position: relative;
@@ -1067,7 +1285,15 @@ main {
     font-size: 20px;
 
 }
-
+@media (max-width: 768px) {
+    .parcotesto2,
+    .sottotitoloparcotesto2 {
+      margin-left: 20px;
+      margin-right: 20px;
+      text-align: left;
+      font-size: 18px;
+    }
+  }
 
 .indice2 {
     background-color: white;
@@ -1110,7 +1336,15 @@ main {
 .column li a:hover {
     color: green;
 }
-
+@media  (max-width: 768px) {
+    .indice2 {
+        flex-direction: column; 
+          margin: 20px 20px; 
+          max-width: 100%; 
+          padding: 10px;
+        }
+      
+    }
 
 
 
@@ -1118,8 +1352,8 @@ main {
     display: flex;
     align-items: flex-start;
     padding: 20px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 1200px;
 }
 
@@ -1129,7 +1363,15 @@ main {
     line-height: 1.2;
     font-family: 'Arial', sans-serif;
 }
-
+@media (max-width: 768px) {
+    .introduzione_2 {
+        flex-direction: column;
+        align-items: center; 
+        padding: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
 .immagine2 {
     flex: 0 0 400px; 
 }
@@ -1179,14 +1421,14 @@ main {
     width: 350px; 
     height: 250px;
     margin: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.5s ease-in-out;
     
 }
 
 .montagne img:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
 }
-
 
 
 
@@ -1225,7 +1467,8 @@ main {
     width: 350px;
     height: 250px;
     gap: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.5s ease-in-out;
 
 }
 
@@ -1270,7 +1513,8 @@ main {
     width: 350px; 
     height: 250px;
     margin: -20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.5s ease-in-out;
 }
    
 
@@ -1307,13 +1551,15 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: -120px 200px;    
+    margin: 0 auto;    /*-120px 200px*/
 }
 
 .patrimoniob2 img {
     width: 350px; 
     height: 250px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.5s ease-in-out;
+    margin: 0 auto; 
 }
 
 .patrimoniob2 img:hover {
@@ -1393,7 +1639,25 @@ main {
 
 /* css dolomiti bellunesi */
 
-
+@media (max-width: 768px) {
+    .montagne1 img,
+    .fauna3 img,
+    .attivita3 img,
+    .patrimoniob3 img {
+      width: 90% ;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+    }
+  
+    .fauna-container3,
+    .attivita-container3,
+    .patrimoniob3-container2,
+    .intro-container3{
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 
 
 .introimgn3 {
@@ -1437,7 +1701,15 @@ main {
     font-size: 20px;
 
 }
-
+@media (max-width: 768px) {
+    .parcotesto3,
+    .sottotitoloparcotesto3 {
+      margin-left: 20px;
+      margin-right: 20px;
+      text-align: left;
+      font-size: 18px;
+    }
+  }
 
 .indice3 {
     background-color: white;
@@ -1481,6 +1753,16 @@ main {
     color: green;
 }
 
+@media  (max-width: 768px) {
+    .indice3 {
+        flex-direction: column; 
+          margin: 20px 20px; 
+          max-width: 100%; 
+          padding: 10px;
+        }
+      
+    }
+
 
 
 
@@ -1493,7 +1775,15 @@ main {
     max-width: 1200px;
     
 }
-
+@media (max-width: 768px) {
+    .introduzione_3 {
+        flex-direction: column;
+        align-items: center; 
+        padding: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
 .testo3 {
     flex:2 ;
     font-size: 20px;
@@ -1508,8 +1798,8 @@ main {
 .immagine3 img {
     width: 100%; 
     height: auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
-    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.5s ease-in-out;
 }
 .immagine3 img:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
@@ -1548,7 +1838,8 @@ main {
     width: 350px; 
     height: 250px;
     margin: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.5s ease-in-out;
     
 }
 
@@ -1584,20 +1875,38 @@ main {
 .fauna-container3 {
     display: flex;
     justify-content: center;
-    margin: -90px 140px;
-    
+    align-items: center;
+    margin-top: -90px auto;
+
 
 }
 
 .fauna3 img {
     width: 350px;
     height: 250px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.5s ease-in-out; 
 
 }
 
 .fauna3 img:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
+}
+@media (max-width: 768px) {
+    .fauna3 img {
+        width: 350px; 
+        height: 250px;
+        display: block;
+        margin: 0px auto; 
+    }
+
+    .fauna-container3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+        
+    }
 }
 
 
@@ -1625,7 +1934,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: -190px 140px;
+    margin: -190px auto;
     
     
 }
@@ -1633,7 +1942,8 @@ main {
 .attivita3 img {
     width: 350px; 
     height: 250px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.5s ease-in-out;
     
 }
    
@@ -1642,6 +1952,22 @@ main {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
 }
 
+@media (max-width: 768px) {
+    .attivita3 img {
+        width: 350px; 
+        height: 250px;
+        display: block;
+        margin: 0px auto; 
+    }
+
+    .fauna-container3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+        
+    }
+}
 
 .patrimoniob3 {
     margin-left: auto;
@@ -1667,7 +1993,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: -290px 200px;
+    margin: -190px auto;
     
       
 }
@@ -1675,12 +2001,25 @@ main {
 .patrimoniob3 img {
     width: 350px; 
     height: 250px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.5s ease-in-out;
 }
 
 .patrimoniob3 img:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
 }
+@media (max-width: 768px) {
+    .patrimoniob3-container2 {
+      flex-direction: column;   
+      align-items: center;      
+    }
+  
+    .patrimoniob3 img {
+      width: 350px;      
+      height: 250px;            
+      margin: 15px auto;        
+    }
+  }
 
 
 .patrimonios3 {
@@ -1803,9 +2142,128 @@ main {
 .cardparchi a:hover {
     text-decoration: underline;
 }
+@media (max-width: 768px) {
+    .cardparchi {
+        margin: 20px !important;  /*forzare*/
+        padding: 20px !important;
+        max-width: 100% !important;
+        height: auto !important;
+      }
+    }
+    
 
 
 
+
+
+
+
+
+.cards1-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 0 200px;
+    
+   
+}
+
+.cards {
+
+    position: relative;
+    overflow: visible;
+    min-height: auto;
+    flex: 0 0 calc(25% - 15px);
+    max-width: calc(25% - 15px);
+    margin-bottom: 10px;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    transition: box-shadow 0.3s ease-in-out;
+    height: 100%;
+    
+    
+    
+}
+
+.cards:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.cards img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.cards-content {
+    position: relative;
+    overflow: hidden;
+    word-wrap: break-word;
+    width: 100%;
+    color: white;
+    font-size: clamp(18px, 4vw, 26px);
+    padding: 0px;
+    box-sizing: border-box; 
+    background: #005211; 
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    
+}
+
+    
+
+.cards-content h3 {
+    font-size: clamp(18px, 4vw, 26px);
+    margin: 0;
+    text-align: center;
+    word-break: break-word;
+    max-width: 100%;
+    color: white;
+}
+.cards-content .parchi {
+    font-weight: bold; 
+    font-size: clamp(14px, 2.5vw, 20px); 
+}
+
+.parchi1 {
+    padding: 15px 20px;
+    background: #005211;
+    width: 100%;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: clamp(14px, 2.5vw, 18px);
+    display: flex;  
+    justify-content: center;     
+    align-items: center; 
+    white-space: normal;
+
+            
+    
+}
+
+.parchi1:hover {
+    background-color: green;
+    transform: scale(1.02);
+    
+}
+
+@media (max-width: 768px) {
+    .cards {
+      flex: 0 0 calc(45% - 10px); 
+      max-width: calc(45% - 10px);
+    }
+  
+    .cards1-container {
+      gap: 10px;
+      padding: 0 10px;
+    }
+  }
 
 /* css flora e fauna  */
 
@@ -1843,6 +2301,25 @@ main {
     margin-left: 200px;
     
 }
+@media (max-width: 768px) {
+    .titolofloraefauna,
+    .titolofloraefaunap {
+      margin-left: 20px;
+      margin-right: 20px;
+      text-align: left;
+      font-size: 18px;
+    }
+  }
+
+@media  (max-width: 768px) {
+    .indiceparchi {
+        flex-direction: column; 
+          margin: 20px 20px; 
+          max-width: 100%; 
+          padding: 10px;
+        }
+      
+    }
 
 .column {
     flex: 1; 
@@ -1907,14 +2384,25 @@ main {
     width: 350px; 
     height: 250px;
     margin: -20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.5s ease-in-out;
 }
    
 
 .parco1 img:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
 }
+@media (max-width: 768px) {
+    .parco1-container {
+        flex-direction: column; 
+        margin-top: 10px; 
+    }
 
+    .parco1 img {
+        width: 90%; 
+        margin: 10px auto; 
+    }
+}
 .parco_1 {
     margin-left: auto;
     margin-right: auto;
@@ -1940,12 +2428,24 @@ main {
     width: 350px; 
     height: 250px;
     margin: -20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.5s ease-in-out;
 }
    
 
 .parco_1 img:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
+}
+@media (max-width: 768px) {
+    .parco_1-container {
+        flex-direction: column; 
+        margin-top: 10px; 
+    }
+
+    .parco_1 img {
+        width: 90%; 
+        margin: 10px auto; 
+    }
 }
 
 .scopri1 {
@@ -1977,6 +2477,25 @@ main {
 }
 .card-button span {
     margin-left: 10px
+}
+@media (max-width: 768px) {
+    .scopri1 {
+        flex-direction: column; 
+        align-items: center;
+        margin: 40px 60px;     
+        padding: 10px;  
+    }
+
+    .scopri1-testo {      
+        text-align: center;              
+        margin-bottom: 10px;    
+    }
+
+    .card-button {
+        width: 50%;                
+        justify-content: center; 
+        border-radius: 4px;
+    }
 }
 
 
@@ -2014,12 +2533,24 @@ main {
     width: 350px; 
     height: 250px;
     margin: -20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.5s ease-in-out;
 }
    
 
 .parco2 img:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
+}
+@media (max-width: 768px) {
+    .parco2-container {
+        flex-direction: column; 
+        margin-top: 10px; 
+    }
+
+    .parco2 img {
+        width: 90%; 
+        margin: 10px auto; 
+    }
 }
 
 .scopri2 {
@@ -2051,6 +2582,25 @@ main {
 }
 .card-button span {
     margin-left: 10px
+}
+@media (max-width: 768px) {
+    .scopri2 {
+        flex-direction: column; 
+        align-items: center;
+        margin: 40px 60px;     
+        padding: 10px;  
+    }
+
+    .scopri2-testo {      
+        text-align: center;              
+        margin-bottom: 10px;    
+    }
+
+    .card-button {
+        width: 50%;                
+        justify-content: center; 
+        border-radius: 4px;
+    }
 }
 
 
@@ -2090,12 +2640,24 @@ main {
     width: 350px; 
     height: 250px;
     margin: -20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.5s ease-in-out;
 }
    
 
 .parco3 img:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
+}
+@media (max-width: 768px) {
+    .parco3-container {
+        flex-direction: column; 
+        margin-top: 10px; 
+    }
+
+    .parco3 img {
+        width: 90%; 
+        margin: 10px auto; 
+    }
 }
 
 .scopri3 {
@@ -2127,6 +2689,25 @@ main {
 }
 .card-button span {
     margin-left: 10px
+}
+@media (max-width: 768px) {
+    .scopri3 {
+        flex-direction: column; 
+        align-items: center;
+        margin: 40px 60px;     
+        padding: 10px;  
+    }
+
+    .scopri3-testo {      
+        text-align: center;              
+        margin-bottom: 10px;    
+    }
+
+    .card-button {
+        width: 50%;                
+        justify-content: center; 
+        border-radius: 4px;
+    }
 }
 
 
@@ -2165,12 +2746,24 @@ main {
     width: 350px; 
     height: 250px;
     margin: -20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.5s ease-in-out;
 }
    
 
 .parco4 img:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
+}
+@media (max-width: 768px) {
+    .parco4-container {
+        flex-direction: column; 
+        margin-top: 10px; 
+    }
+
+    .parco4 img {
+        width: 90%; 
+        margin: 10px auto; 
+    }
 }
 
 .parco_4 {
@@ -2198,12 +2791,24 @@ main {
     width: 350px; 
     height: 250px;
     margin: -20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.5s ease-in-out;
 }
    
 
 .parco_4 img:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
+}
+@media (max-width: 768px) {
+    .parco_4-container {
+        flex-direction: column; 
+        margin-top: 10px; 
+    }
+
+    .parco_4 img {
+        width: 90%; 
+        margin: 10px auto; 
+    }
 }
 
 .scopri4 {
@@ -2236,62 +2841,25 @@ main {
 .card-button span {
     margin-left: 10px
 }
+@media (max-width: 768px) {
+    .scopri4 {
+        flex-direction: column; 
+        align-items: center;
+        margin: 40px 60px;     
+        padding: 10px;  
+    }
 
+    .scopri4-testo {      
+        text-align: center;              
+        margin-bottom: 10px;    
+    }
 
-
-
-/* css parchi  */
-
-.titoloparchi {
-    text-align: left;
-    margin-top: 60px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1200px;
+    .card-button {
+        width: 50%;                
+        justify-content: center; 
+        border-radius: 4px;
+    }
 }
-
-.titoloparchi h3 {
-    font-size: 26px;
-    font-weight: bold;
-    color: #005211;
-} 
-
-.titoloparchi p {
-    font-size: 24px;
-    line-height: 1.2;
-    margin-top: -10px;
-    font-family: 'Arial', sans-serif;
-}
-
-.cardparchi {
-    text-align: left;
-    margin-left: 150px;
-    margin-right: 150px;
-    background-color: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    max-width: 800px;
-    height: 300px;
-}
-
-.cardparchi ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-.cardparchi li {
-    margin-bottom: 20px;
-    font-size: 20px;
-}
-.cardparchi a {
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-}
-.cardparchi a:hover {
-    text-decoration: underline;
-}
-
 
 
 
@@ -2360,6 +2928,25 @@ main {
 .column li a:hover {
     color: green;
 }
+@media (max-width: 768px) {
+    .titoloattività,
+    .titoloattivitàp {
+      margin-left: 20px;
+      margin-right: 20px;
+      text-align: left;
+      font-size: 18px;
+    }
+  }
+
+@media  (max-width: 768px) {
+    .indiceattività {
+        flex-direction: column; 
+          margin: 20px 20px; 
+          max-width: 100%; 
+          padding: 10px;
+        }
+      
+    }
 
 .attività1 {
     margin-left: auto;
@@ -2393,14 +2980,31 @@ main {
 .attività1 img {
     width: 350px; 
     height: 250px;
-    margin: -20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.5s ease-in-out;
 }
    
 
 .attività1 img:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
 }
+@media (max-width: 768px) {
+    .attività1-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto; 
+        padding: 0px 10px;
+    }
+
+    .attività1 img {
+        width: 80%; 
+        height: auto; 
+        margin: 10px 0;
+        
+    }
+}
+
 
 
 .scopri_1 {
@@ -2432,6 +3036,25 @@ main {
 }
 .card-button span {
     margin-left: 10px
+}
+@media (max-width: 768px) {
+    .scopri_1 {
+        flex-direction: column; 
+        align-items: center;
+        margin: 40px 60px;     
+        padding: 10px;  
+    }
+
+    .scopri_1-testo {      
+        text-align: center;              
+        margin-bottom: 10px;    
+    }
+
+    .card-button {
+        width: 50%;                
+        justify-content: center; 
+        border-radius: 4px;
+    }
 }
 
 
@@ -2469,7 +3092,8 @@ main {
     width: 350px; 
     height: 250px;
     margin: -20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.5s ease-in-out;
 }
    
 
@@ -2477,6 +3101,22 @@ main {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
 }
 
+@media (max-width: 768px) {
+    .attività2-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto; 
+        padding: 0px 10px;
+    }
+
+    .attività2 img {
+        width: 100%; 
+        height: auto; 
+        margin: 10px 0;
+        
+    }
+}
 .scopri_2 {
     display: flex;
     align-items: center; 
@@ -2507,7 +3147,25 @@ main {
 .card-button span {
     margin-left: 10px
 }
+@media (max-width: 768px) {
+    .scopri_2 {
+        flex-direction: column; 
+        align-items: center;
+        margin: 40px 60px;     
+        padding: 10px;  
+    }
 
+    .scopri_2-testo {      
+        text-align: center;              
+        margin-bottom: 10px;    
+    }
+
+    .card-button {
+        width: 50%;                
+        justify-content: center; 
+        border-radius: 4px;
+    }
+}
 
 
 
@@ -2545,12 +3203,29 @@ main {
     width: 350px; 
     height: 250px;
     margin: -20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.5s ease-in-out;
 }
    
 
 .attività3 img:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
+}
+@media (max-width: 768px) {
+    .attività3-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto; 
+        padding: 0px 10px;
+    }
+
+    .attività3 img {
+        width: 80%; 
+        height: auto; 
+        margin: 10px 0;
+        
+    }
 }
 
 .scopri_3 {
@@ -2582,6 +3257,25 @@ main {
 }
 .card-button span {
     margin-left: 10px
+}
+@media (max-width: 768px) {
+    .scopri_3 {
+        flex-direction: column; 
+        align-items: center;
+        margin: 40px 60px;     
+        padding: 10px;  
+    }
+
+    .scopri_3-testo {      
+        text-align: center;              
+        margin-bottom: 10px;    
+    }
+
+    .card-button {
+        width: 50%;                
+        justify-content: center; 
+        border-radius: 4px;
+    }
 }
 
 
@@ -2620,14 +3314,30 @@ main {
     width: 350px; 
     height: 250px;
     margin: -20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.5s ease-in-out;
 }
    
 
 .attività4 img:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
 }
+@media (max-width: 768px) {
+    .attività4-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto; 
+        padding: 0px 10px;
+    }
 
+    .attività4 img {
+        width: 80%; 
+        height: auto; 
+        margin: 10px 0;
+        
+    }
+}
 .scopri_4 {
     display: flex;
     align-items: center; 
@@ -2658,7 +3368,25 @@ main {
 .card-button span {
     margin-left: 10px
 }
+@media (max-width: 768px) {
+    .scopri_4 {
+        flex-direction: column; 
+        align-items: center;
+        margin: 40px 60px;     
+        padding: 10px;  
+    }
 
+    .scopri_4-testo {      
+        text-align: center;              
+        margin-bottom: 10px;    
+    }
+
+    .card-button {
+        width: 50%;                
+        justify-content: center; 
+        border-radius: 4px;
+    }
+}
 
 .footer-bar {
     background-color: #d3d3d3; 
