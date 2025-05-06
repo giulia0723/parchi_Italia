@@ -36,6 +36,14 @@ header h4 {
     text-align: left; 
 
 }
+header h4 a{
+    color: black;
+    text-decoration: none;
+}
+
+header h4 a:hover{
+    color: green;
+}
 
 .linea {
     border: 1px solid #CFCFD4;
@@ -282,6 +290,10 @@ main {
     color: black;
 }
 
+p {
+    max-width: 90%;
+}
+
 .scopridipiu {
     margin-top: auto;
     background: #005211;
@@ -492,12 +504,9 @@ main {
 .immagine img {
     width: 100%;
     height: auto;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
-    transition: box-shadow 0.5s ease-in-out;
+    
 }
-.immagine img:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
-}
+
 @media (max-width: 768px) {
     .introduzione1 {
         flex-direction: column;
@@ -562,13 +571,7 @@ main {
     width: 350px; 
     height: 250px;
     margin: 25px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
-    transition: box-shadow 0.5s ease-in-out;
     
-}
-
-.granp img:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
 }
 @media (max-width: 768px) {
     .intro-container {
@@ -615,16 +618,8 @@ main {
     max-width: 350px;
     height: auto;
     object-fit: cover; 
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
-    transition: box-shadow 0.5s ease-in-out;
    
 }
-
-.fauna img:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
-}
-
-
 
 
 .attività {
@@ -660,14 +655,7 @@ main {
 .attività img {
     width: 350px; 
     height: 250px; 
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
-    transition: box-shadow 0.5s ease-in-out;
 }
-
-.attività img:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
-}
-
 
 .attività2 {
     padding: 20px;
@@ -725,13 +713,8 @@ main {
 .patrimoniob  img {
     width: 350px; 
     height: 250px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
-    transition: box-shadow 0.5s ease-in-out;
 }
 
-.patrimoniob  img:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
-}
 
 
 
@@ -940,11 +923,6 @@ main {
 .immagine1 img {
     width: 100%;
     height: auto;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
-    transition: box-shadow 0.5s ease-in-out;
-}
-.immagine1 img:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
 }
 
 @media (max-width: 768px) {
@@ -989,17 +967,7 @@ main {
     width: 350px; 
     height: 250px;
     margin: 25px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
-    transition: box-shadow 0.5s ease-in-out;
-    
 }
-
-.vulcano img:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
-}
-
-
-
 
 .fauna1 {
     margin-left: auto;
@@ -1013,8 +981,7 @@ main {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
-    
-    
+       
 }
 
 .fauna1 p {
@@ -1022,9 +989,6 @@ main {
     line-height: 1.2;
     font-family: 'Arial', sans-serif;
 }
-
-
-
 
 .fauna-container1 {
     display: flex;
@@ -1039,14 +1003,9 @@ main {
     max-width: 350px; 
     height: 250px;
     margin: 15px 0;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
-    transition: box-shadow 0.5s ease-in-out;
     object-fit: cover;
 }   
 
-.fauna1 img:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
-}
 
 @media (max-width: 768px) {
     .fauna-container1 {
@@ -1094,14 +1053,9 @@ main {
     width: 350px; 
     height: 250px; 
     margin: 15px 0; 
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
-    transition: box-shadow 0.5s ease-in-out;
     object-fit: cover; 
 }
 
-.attività1 img:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
-}
 @media (max-width: 768px) {
     .attività-container1 {
         flex-direction: column;     }
@@ -1139,18 +1093,8 @@ main {
 .attivita1 img {
     width: 350px; 
     height: 250px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
-    transition: box-shadow 0.5s ease-in-out;
     margin: 90px 25px
 }
-
-.attivita1 img:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
-}
-
-
-
-
 
 .patrimonio1 {
     padding: 20px;
@@ -1379,16 +1323,7 @@ main {
 .immagine2 img {
     width: 100%;
     height: auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
-    transition: box-shadow 0.3s ease-in-out;
 }
-.immagine2 img:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
-}
-
-
-
-
 .montagne {
     max-width: 1200px; 
     margin-top: 120px;
@@ -1420,17 +1355,8 @@ main {
 .montagne img {
     width: 350px; 
     height: 250px;
-    margin: 25px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
-    transition: box-shadow 0.5s ease-in-out;
-    
+    margin: 25px;  
 }
-
-.montagne img:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
-}
-
-
 
 .fauna2 {
     margin-left: auto;
@@ -1467,16 +1393,7 @@ main {
     width: 350px;
     height: 250px;
     gap: 25px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
-    transition: box-shadow 0.5s ease-in-out;
-
 }
-
-.fauna2 img:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
-}
-
-
 
 
 .attività2 {
@@ -1484,8 +1401,6 @@ main {
     margin-right: auto;
     max-width: 1200px; 
     margin-top: 60px;
-    
-
 }
 
 .attività2 h3 {
@@ -1513,17 +1428,8 @@ main {
     width: 350px; 
     height: 250px;
     margin: -20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
-    transition: box-shadow 0.5s ease-in-out;
 }
    
-
-.attività2 img:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
-}
-
-
-
 
 .patrimoniob2 {
     margin-left: auto;
@@ -1557,17 +1463,8 @@ main {
 .patrimoniob2 img {
     width: 350px; 
     height: 250px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
-    transition: box-shadow 0.5s ease-in-out;
     margin: 0 auto; 
 }
-
-.patrimoniob2 img:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
-}
-
-
-
 .patrimonios2 {
     padding: 20px;
     margin-left: -20px;
@@ -1590,9 +1487,6 @@ main {
     margin-right: 20px;
     font-family: 'Arial', sans-serif;
 }
-
-
-
 
 .conservazione2 {
     
@@ -1630,9 +1524,6 @@ main {
     line-height: 1.2;
     font-family: 'Arial', sans-serif;
 }
-
-
-
 
 
 
@@ -1798,13 +1689,7 @@ main {
 .immagine3 img {
     width: 100%; 
     height: auto;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
-    transition: box-shadow 0.5s ease-in-out;
 }
-.immagine3 img:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
-}
-
 
 .montagne1 {
     margin-left: auto;
@@ -1838,15 +1723,7 @@ main {
     width: 350px; 
     height: 250px;
     margin: 25px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
-    transition: box-shadow 0.5s ease-in-out;
-    
 }
-
-.montagne1 img:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
-}
-
 
 .fauna3 {
     margin-left: auto;
@@ -1884,14 +1761,9 @@ main {
 .fauna3 img {
     width: 350px;
     height: 250px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
-    transition: box-shadow 0.5s ease-in-out; 
 
 }
 
-.fauna3 img:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
-}
 @media (max-width: 768px) {
     .fauna3 img {
         width: 350px; 
@@ -1942,15 +1814,8 @@ main {
 .attivita3 img {
     width: 350px; 
     height: 250px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
-    transition: box-shadow 0.5s ease-in-out;
-    
 }
    
-
-.attivita3 img:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
-}
 
 @media (max-width: 768px) {
     .attivita3 img {
@@ -2001,13 +1866,8 @@ main {
 .patrimoniob3 img {
     width: 350px; 
     height: 250px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
-    transition: box-shadow 0.5s ease-in-out;
 }
 
-.patrimoniob3 img:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
-}
 @media (max-width: 768px) {
     .patrimoniob3-container2 {
       flex-direction: column;   
@@ -2384,14 +2244,8 @@ main {
     width: 350px; 
     height: 250px;
     margin: -20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
-    transition: box-shadow 0.5s ease-in-out;
 }
    
-
-.parco1 img:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
-}
 @media (max-width: 768px) {
     .parco1-container {
         flex-direction: column; 
@@ -2428,14 +2282,8 @@ main {
     width: 350px; 
     height: 250px;
     margin: -20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
-    transition: box-shadow 0.5s ease-in-out;
 }
    
-
-.parco_1 img:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
-}
 @media (max-width: 768px) {
     .parco_1-container {
         flex-direction: column; 
@@ -2533,14 +2381,8 @@ main {
     width: 350px; 
     height: 250px;
     margin: -20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
-    transition: box-shadow 0.5s ease-in-out;
 }
    
-
-.parco2 img:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
-}
 @media (max-width: 768px) {
     .parco2-container {
         flex-direction: column; 
@@ -2640,14 +2482,8 @@ main {
     width: 350px; 
     height: 250px;
     margin: -20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
-    transition: box-shadow 0.5s ease-in-out;
 }
    
-
-.parco3 img:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
-}
 @media (max-width: 768px) {
     .parco3-container {
         flex-direction: column; 
@@ -2746,14 +2582,8 @@ main {
     width: 350px; 
     height: 250px;
     margin: -20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
-    transition: box-shadow 0.5s ease-in-out;
 }
    
-
-.parco4 img:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
-}
 @media (max-width: 768px) {
     .parco4-container {
         flex-direction: column; 
@@ -2980,14 +2810,8 @@ main {
 .attività1 img {
     width: 350px; 
     height: 250px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
-    transition: box-shadow 0.5s ease-in-out;
 }
    
-
-.attività1 img:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
-}
 @media (max-width: 768px) {
     .attività1-container {
         flex-direction: column;
@@ -3092,15 +2916,8 @@ main {
     width: 350px; 
     height: 250px;
     margin: -20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
-    transition: box-shadow 0.5s ease-in-out;
 }
    
-
-.attività2 img:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
-}
-
 @media (max-width: 768px) {
     .attività2-container {
         flex-direction: column;
@@ -3203,14 +3020,8 @@ main {
     width: 350px; 
     height: 250px;
     margin: -20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
-    transition: box-shadow 0.5s ease-in-out;
 }
    
-
-.attività3 img:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
-}
 @media (max-width: 768px) {
     .attività3-container {
         flex-direction: column;
@@ -3314,14 +3125,8 @@ main {
     width: 350px; 
     height: 250px;
     margin: -20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
-    transition: box-shadow 0.5s ease-in-out;
 }
-   
 
-.attività4 img:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
-}
 @media (max-width: 768px) {
     .attività4-container {
         flex-direction: column;
